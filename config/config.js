@@ -29,9 +29,11 @@ export default {
             ]
           },
           {path: 'puzzlecards', component: './puzzlecards'},
+          {path: 'list', component: '../page/list'}
         ]
       }
     ],
+
     //proxy: {
     //'/random_joke': {
     //  target: 'https://official-joke-api.appspot.com',
@@ -40,3 +42,5 @@ export default {
     //},
   //},
 };
+
+
