@@ -16,6 +16,7 @@ class List extends React.Component {
       {
         title: '链接',
         dataIndex: 'url',
+        render: value => <a href={value}>{value}</a>,
       },
     ];
 
@@ -43,5 +44,6 @@ function mapStateToProps(state) {
     cardsLoading: state.loading.effects['cards/queryList'],
   };
 }
+
 
 export default connect(mapStateToProps)(List);
